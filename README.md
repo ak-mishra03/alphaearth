@@ -1,4 +1,4 @@
-# 🌍 Earth Claim Vision
+# 🌍 AlphaEarth
 
 ### Transforming Insurance and Risk Assessment with AI + Satellite Intelligence
 
