@@ -43,13 +43,13 @@ export default function Dashboard() {
         <p className="text-muted-foreground mt-1">Real-time insights from Earth observation and AI analytics</p>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         {/* Total Locations */}
-        <Card className="p-6 hover:shadow-lg transition-shadow">
+        <Card className="p-8 hover:shadow-lg transition-shadow">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-muted-foreground">Total Locations</p>
-              <p className="text-3xl font-bold text-foreground mt-2">{stats.total_locations}</p>
+              <p className="text-4xl font-bold text-foreground mt-2">{stats.total_locations}</p>
             </div>
             <div className="h-12 w-12 rounded-full bg-info/10 flex items-center justify-center">
               <MapPin className="h-6 w-6 text-info" />
@@ -62,11 +62,11 @@ export default function Dashboard() {
         </Card>
 
         {/* Active Claims */}
-        <Card className="p-6 hover:shadow-lg transition-shadow">
+        <Card className="p-8 hover:shadow-lg transition-shadow">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-muted-foreground">Active Claims</p>
-              <p className="text-3xl font-bold text-foreground mt-2">{stats.active_claims}</p>
+              <p className="text-4xl font-bold text-foreground mt-2">{stats.active_claims}</p>
             </div>
             <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
               <FileText className="h-6 w-6 text-primary" />
@@ -79,11 +79,11 @@ export default function Dashboard() {
         </Card>
 
         {/* Total Claims Value */}
-        <Card className="p-6 hover:shadow-lg transition-shadow">
+        <Card className="p-8 hover:shadow-lg transition-shadow">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-muted-foreground">Total Claims Value</p>
-              <p className="text-3xl font-bold text-foreground mt-2">
+              <p className="text-4xl font-bold text-foreground mt-2">
                 ${(stats.total_claim_amount / 1000).toFixed(0)}K
               </p>
             </div>
@@ -99,11 +99,11 @@ export default function Dashboard() {
         </Card>
 
         {/* Active Triggers */}
-        <Card className="p-6 hover:shadow-lg transition-shadow">
+        <Card className="p-8 hover:shadow-lg transition-shadow">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-muted-foreground">Active Triggers</p>
-              <p className="text-3xl font-bold text-foreground mt-2">{stats.active_triggers}</p>
+              <p className="text-4xl font-bold text-foreground mt-2">{stats.active_triggers}</p>
             </div>
             <div className="h-12 w-12 rounded-full bg-warning/10 flex items-center justify-center">
               <AlertTriangle className="h-6 w-6 text-warning" />
@@ -117,7 +117,7 @@ export default function Dashboard() {
 
       {/* Risk Distribution */}
       <div className="grid gap-6 md:grid-cols-2">
-        <Card className="p-6">
+        <Card className="p-8">
           <h3 className="text-lg font-semibold mb-4">Risk Score Distribution</h3>
           <div className="flex gap-4">
             <div className="flex-1 bg-destructive/10 p-4 rounded-lg">
@@ -136,7 +136,7 @@ export default function Dashboard() {
         </Card>
 
         {/* Recent Claims */}
-        <Card className="p-6">
+        <Card className="p-8">
           <h3 className="text-lg font-semibold mb-4">Recent Claims Activity</h3>
           <p className="text-sm text-muted-foreground">
             Use the claims page to see detailed recent claims.
@@ -146,4 +146,3 @@ export default function Dashboard() {
     </div>
   );
 }
-
